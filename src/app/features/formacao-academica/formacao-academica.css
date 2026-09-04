@@ -1,0 +1,107 @@
+.pagina {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+  background: #202020;
+}
+
+.card {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 55px 60px 25px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-sizing: border-box;
+}
+
+.conteudo h1 {
+  margin: 0 0 25px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 34px;
+
+  text-align: center;
+
+  color: #111111;
+}
+
+.conteudo h2 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 22px;
+
+  color: #111111;
+}
+
+.conteudo h3 {
+  margin-top: 12px;
+  margin-bottom: 6px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 18px;
+
+  color: #111111;
+}
+
+.conteudo p {
+  margin: 0 0 12px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  color: #111111;
+}
+
+.navegacao {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 25px;
+}
+
+.botao {
+  padding: 8px 18px;
+
+  background: #7374ff;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 20px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 17px;
+
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: #5f60e8;
+}

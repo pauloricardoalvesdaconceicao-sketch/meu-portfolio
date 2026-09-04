@@ -1,0 +1,179 @@
+.pagina {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  background: #202020;
+}
+
+.sobre {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 700px;
+
+  display: grid;
+  grid-template-columns: 35% 65%;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+/* LADO DA FOTO */
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 30px;
+
+  background: #ffffff;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 25px;
+}
+
+.perfil h1 {
+  margin: 0;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 34px;
+
+  font-weight: bold;
+
+  color: #111111;
+
+  text-align: center;
+}
+
+.cargo {
+  margin-top: 8px;
+
+  max-width: 250px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+
+  text-align: center;
+
+  color: #111111;
+}
+
+.contato {
+  width: 100%;
+  max-width: 280px;
+
+  margin-top: 45px;
+}
+
+.contato p {
+  margin: 14px 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+
+  color: #222222;
+}
+
+.contato a {
+  color: #222222;
+
+  text-decoration: none;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}
+
+/* LADO DO TEXTO */
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 60px 70px;
+}
+
+.conteudo h2 {
+  margin: 0 0 15px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 42px;
+
+  color: #111111;
+
+  letter-spacing: 1px;
+}
+
+.conteudo p {
+  max-width: 650px;
+
+  margin: 0 0 12px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+
+  color: #111111;
+}
+
+/* BOTÃO */
+
+.botao-area {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 35px;
+}
+
+.botao {
+  padding: 10px 22px;
+
+  background: #7374ff;
+
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  text-decoration: none;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background: #5d5ee8;
+}
