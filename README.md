@@ -31,6 +31,4 @@ Paulo Ricardo
 
 📍 Macapá — AP
 
-📧 E-mail: pauloconceicaobr15612@gmail.com
-
-📱 Telefone: 96984107691
+📧 E-mail: paulo.r.conceicao6@aluno.senai.br
