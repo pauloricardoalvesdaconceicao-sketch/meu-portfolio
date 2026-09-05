@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {
+  RouterLink,
+  RouterLinkActive
+} from '@angular/router';
 
 @Component({
   selector: 'app-habilidades',
-  imports: [RouterLink],
+  imports: [
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './habilidades.html',
   styleUrl: './habilidades.css'
 })
