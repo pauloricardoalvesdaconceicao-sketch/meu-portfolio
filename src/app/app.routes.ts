@@ -35,34 +35,6 @@ export const routes: Routes = [
   },
 
   {
-    path: 'experiencia',
-    loadComponent: () =>
-      import('./features/experiencia/experiencia')
-        .then(m => m.Experiencia)
-  },
-
-  {
-    path: 'certificacoes',
-    loadComponent: () =>
-      import('./features/certificacoes/certificacoes')
-        .then(m => m.Certificacoes)
-  },
-
-  {
-    path: 'qualificacoes',
-    loadComponent: () =>
-      import('./features/qualificacoes/qualificacoes')
-        .then(m => m.Qualificacoes)
-  },
-
-  {
-    path: 'projetos',
-    loadComponent: () =>
-      import('./features/projetos/projetos')
-        .then(m => m.Projetos)
-  },
-
-  {
     path: '**',
     redirectTo: 'sobre'
   }
