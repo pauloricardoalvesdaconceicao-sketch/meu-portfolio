@@ -4,7 +4,10 @@ import { Header } from './shared/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header],
+  imports: [
+    RouterOutlet,
+    Header
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

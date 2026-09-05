@@ -6,11 +6,11 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 50px;
+  padding: 0 55px;
 
   background: #ffffff;
 
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #dedede;
 
   box-sizing: border-box;
 }
@@ -21,19 +21,23 @@
   font-size: 24px;
   font-weight: bold;
 
-  color: #111827;
-
   letter-spacing: 1px;
+
+  color: #111111;
 }
 
 .nav {
   display: flex;
   align-items: center;
 
-  gap: 24px;
+  gap: 30px;
 }
 
 .nav a {
+  position: relative;
+
+  padding: 10px 0;
+
   color: #333333;
 
   text-decoration: none;
@@ -41,21 +45,32 @@
   font-family: Arial, sans-serif;
 
   font-size: 14px;
-  font-weight: 500;
-
-  padding: 10px 0;
 
   transition: 0.2s;
 }
 
 .nav a:hover {
-  color: #6c63ff;
+  color: #7374ff;
 }
 
 .nav a.active {
-  color: #6c63ff;
+  color: #7374ff;
 
   font-weight: bold;
+}
 
-  border-bottom: 2px solid #6c63ff;
+.nav a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 2px;
+
+  height: 2px;
+
+  background: #7374ff;
+
+  border-radius: 10px;
 }

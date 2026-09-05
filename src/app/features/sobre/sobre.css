@@ -1,11 +1,12 @@
 .pagina {
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
 
   display: flex;
-  align-items: center;
-  justify-content: center;
 
-  padding: 25px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
 
   background: #202020;
 }
@@ -13,41 +14,46 @@
 .sobre {
   width: 100%;
   max-width: 1200px;
+
   min-height: 700px;
 
   display: grid;
-  grid-template-columns: 35% 65%;
+
+  grid-template-columns: 36% 64%;
 
   background: #ffffff;
 
-  border-radius: 18px;
+  border-radius: 20px;
 
   overflow: hidden;
 }
 
-/* LADO DA FOTO */
+/* PERFIL */
 
 .perfil {
   display: flex;
+
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
 
-  padding: 40px 30px;
-
-  background: #ffffff;
+  padding: 40px;
 }
 
 .foto-perfil {
-  width: 150px;
-  height: 150px;
+  width: 165px;
+  height: 165px;
 
   object-fit: cover;
 
   border-radius: 50%;
 
+  border: 4px solid #aaa8f7;
+
   margin-bottom: 25px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .perfil h1 {
@@ -55,9 +61,7 @@
 
   font-family: Georgia, 'Times New Roman', serif;
 
-  font-size: 34px;
-
-  font-weight: bold;
+  font-size: 32px;
 
   color: #111111;
 
@@ -65,109 +69,207 @@
 }
 
 .cargo {
-  margin-top: 8px;
+  max-width: 270px;
 
-  max-width: 250px;
+  margin: 10px 0 0;
 
-  font-family: Arial, sans-serif;
+  text-align: center;
+
+  font-family: Georgia, 'Times New Roman', serif;
 
   font-size: 15px;
 
   line-height: 1.4;
 
-  text-align: center;
-
-  color: #111111;
+  color: #555555;
 }
+
+/* CONTATO */
 
 .contato {
   width: 100%;
-  max-width: 280px;
 
-  margin-top: 45px;
+  max-width: 300px;
+
+  margin-top: 35px;
 }
 
 .contato p {
-  margin: 14px 0;
+  display: flex;
 
-  font-family: Arial, sans-serif;
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 15px 0;
 
   font-size: 14px;
 
-  color: #222222;
+  color: #333333;
+}
+
+.contato i {
+  width: 20px;
+
+  color: #7374ff;
+
+  font-size: 16px;
+
+  text-align: center;
 }
 
 .contato a {
-  color: #222222;
+  color: #333333;
 
   text-decoration: none;
+
+  word-break: break-word;
 }
 
 .contato a:hover {
-  text-decoration: underline;
+  color: #7374ff;
 }
 
-/* LADO DO TEXTO */
+/* CONTEÚDO */
 
 .conteudo {
   display: flex;
+
   flex-direction: column;
 
   justify-content: center;
 
-  padding: 60px 70px;
+  padding: 65px 75px;
+}
+
+.subtitulo {
+  margin-bottom: 8px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  color: #7374ff;
 }
 
 .conteudo h2 {
-  margin: 0 0 15px;
+  margin: 0 0 25px;
 
   font-family: Georgia, 'Times New Roman', serif;
 
-  font-size: 42px;
+  font-size: 38px;
+
+  font-weight: normal;
 
   color: #111111;
 
-  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.conteudo h2 strong {
+  font-weight: bold;
 }
 
 .conteudo p {
-  max-width: 650px;
+  max-width: 680px;
 
-  margin: 0 0 12px;
+  margin: 0 0 15px;
 
   font-family: Arial, sans-serif;
 
   font-size: 16px;
 
-  line-height: 1.55;
+  line-height: 1.65;
 
-  color: #111111;
+  color: #333333;
 }
 
-/* BOTÃO */
+/* DESTAQUE */
 
-.botao-area {
+.destaque {
+  max-width: 650px;
+
   display: flex;
 
-  justify-content: flex-end;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 10px;
+
+  padding: 17px 20px;
+
+  background: #f4f3ff;
+
+  border-left: 4px solid #7374ff;
+
+  border-radius: 8px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  font-style: italic;
+
+  color: #34328a;
+}
+
+.destaque i {
+  margin-top: 2px;
+
+  font-size: 18px;
+
+  color: #7374ff;
+}
+
+/* NAVEGAÇÃO */
+
+.navegacao {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
 
   margin-top: 35px;
 }
 
+.contador {
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+
+  color: #777777;
+
+  letter-spacing: 1px;
+}
+
 .botao {
-  padding: 10px 22px;
+  display: inline-flex;
 
-  background: #7374ff;
+  align-items: center;
 
-  color: #ffffff;
+  gap: 8px;
+
+  padding: 10px 20px;
+
+  background: #aaa8f7;
 
   border-radius: 20px;
+
+  color: #292784;
 
   text-decoration: none;
 
   font-family: Georgia, 'Times New Roman', serif;
 
-  font-size: 18px;
+  font-size: 17px;
 
   font-weight: bold;
 
@@ -175,5 +277,7 @@
 }
 
 .botao:hover {
-  background: #5d5ee8;
+  background: #7374ff;
+
+  color: #ffffff;
 }

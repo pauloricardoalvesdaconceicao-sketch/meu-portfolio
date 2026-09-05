@@ -13,3 +13,8 @@ body {
 
   background: #ffffff;
 }
+
+:host {
+  display: block;
+  min-height: 100vh;
+}
